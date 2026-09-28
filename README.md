@@ -109,6 +109,14 @@ Mass-Elastic (Table I):
 python evaluate.py --config configs/mass_elastic/ball.yaml --checkpoint checkpoints/mass_elastic/ball.pth
 ```
 
+Extrapolation (Table III): the Mass-Elastic model is trained on frames 40–59; evaluate it
+on the window extended by 10 frames:
+
+```bash
+python evaluate.py --config configs/mass_elastic/ball.yaml --checkpoint checkpoints/mass_elastic/ball.pth \
+    --sequence_length 30 --output_dir outputs/mass_elastic_extrapolation
+```
+
 Metrics are computed between corresponding vertices of the predicted and ground-truth
 shapes in world coordinates (RMSE, MAE in mm; MSE in mm²), per frame, and averaged over
 all frames and test sequences. Results are written to `outputs/.../metrics_test.json`.
@@ -172,9 +180,10 @@ Numbers obtained with this code and the released checkpoints (CPU, test split):
 | Pillow | 4.705 | 3.560 | 25.3 |
 | **Average** | **6.657** | **5.140** | **58.3** |
 
-| Mass-Elastic (Table I) | RMSE (mm) | MAE (mm) | MSE (mm²) |
+| Mass-Elastic | RMSE (mm) | MAE (mm) | MSE (mm²) |
 |---|---:|---:|---:|
-| ODeform | 1.301 | 0.930 | 2.67 |
+| Frames 40–59 (Table I) | 1.301 | 0.930 | 2.67 |
+| Frames 40–69, extrapolation (Table III) | 3.687 | 2.434 | 41.9 |
 
 | Parameter optimization (Table V) | Mass | Bending |
 |---|---:|---:|
