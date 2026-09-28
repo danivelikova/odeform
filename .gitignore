@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+data/
+checkpoints/
+outputs/
+*.pth
+*.zip
+*.tar
+*.tar.gz

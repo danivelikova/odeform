@@ -1,0 +1,18 @@
+# Transfer to real captured shoes from HouseCat6D (paper Fig. 5).
+# The shoe meshes are first aligned to the flip-flop of the Contact-Force dataset
+# (scripts/align_housecat6d.py) and then deformed with the flip-flop model.
+experiment: contact_force
+checkpoint: checkpoints/demo/flipflop_nobn.pth
+deform_encoder: pointnet
+output_dir: outputs/housecat6d
+
+seq_start_idx: 0
+sequence_length: 10
+fps: 10
+latent_dim: 128
+ode_hidden_layers: 5
+
+# Impact used for the figure (coordinates of the Contact-Force reference frame)
+contact_point: [-0.17923301458358765, -0.03706370294094086, 0.3167459964752197]
+contact_vector: [-0.5380352139472961, -0.21974171698093414, 0.8137761354446411]
+initial_offset: [-0.00018498274582852935, -9.095990992446135e-05, 0.002546061236949798]

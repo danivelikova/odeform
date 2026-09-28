@@ -1,0 +1,18 @@
+# Contact-Force dataset, object: pillow (paper Tables I and II)
+experiment: contact_force
+dataset_path: data/contact_force/pillow
+output_dir: outputs/contact_force/pillow
+
+# 20 simulated frames per sequence; the model is trained and evaluated on frames 0-9.
+seq_start_idx: 0
+sequence_length: 10
+fps: 10
+batch_size: 64
+
+deform_encoder: pointnet_bn
+latent_dim: 128
+ode_hidden_layers: 5
+
+lr: 1.0e-3
+min_epochs: 200
+early_stopping_patience: 20

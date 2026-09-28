@@ -1,0 +1,19 @@
+# Mass-Elastic dataset (paper Tables I and V)
+experiment: mass_elastic
+dataset_path: data/mass_elastic
+output_dir: outputs/mass_elastic
+
+# Drop sequences with 100 frames at 20 fps; the window around the ground impact
+# (frames 40-59, t = 2.0-2.95 s) is used for training and evaluation.
+seq_start_idx: 40
+sequence_length: 20
+fps: 20
+batch_size: 64
+
+deform_encoder: pemlp
+latent_dim: 128
+ode_hidden_layers: 5
+
+lr: 1.0e-3
+min_epochs: 100
+early_stopping_patience: 20

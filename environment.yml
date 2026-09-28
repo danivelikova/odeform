@@ -1,0 +1,18 @@
+name: odeform
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch=2.1.1
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - torchdiffeq==0.2.5
+      - numpy==1.23.5
+      - open3d==0.18.0
+      - pyyaml==6.0.1
+      - matplotlib==3.8.3
+      - pillow==10.1.0
+      - gdown>=5.1
