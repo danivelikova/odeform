@@ -222,4 +222,6 @@ with [torchdiffeq](https://github.com/rtqichen/torchdiffeq).
 
 ## License
 
-The code is released under the [MIT License](LICENSE).
+The code is released under the [MIT License](LICENSE). The Contact-Force and Mass-Elastic
+datasets are released under the
+[Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
