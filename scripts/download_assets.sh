@@ -14,15 +14,15 @@ set -euo pipefail
 FOLDER_URL="https://drive.google.com/drive/folders/1FmD-MZsBkA3cIzFlTwfNlf-u1JqdCRyy"
 
 declare -A FILE_ID=(
-  [checkpoints]="__ID_odeform_checkpoints__"
-  [bottle]="__ID_contact_force_bottle__"
-  [cat]="__ID_contact_force_cat__"
-  [dog]="__ID_contact_force_dog__"
-  [donut]="__ID_contact_force_donut__"
-  [doritos]="__ID_contact_force_doritos__"
-  [flipflop]="__ID_contact_force_flipflop__"
-  [pillow]="__ID_contact_force_pillow__"
-  [mass_elastic]="__ID_mass_elastic__"
+  [checkpoints]="1x-9U7LHkom5MA0VUkpKVH6PlC1TGUmiL"
+  [bottle]="1MFDyrhsZWyXyEztrmdw2JY6iMtWfruUb"
+  [cat]="1YFBxUfS09OHNexHxqxOEsiA10sGuwJlc"
+  [dog]="1ZmRSJ-4iL_GjOP99vP29Noomcln_RotZ"
+  [donut]="1K_kwQ-OhujRFrqEUvC1-hRNiq83i7PUz"
+  [doritos]="1Vwx-Ho2enADI_c-KK8lwFw_3GRaoRu06"
+  [flipflop]="1Yl93TfdQe9gtRmiRTvqhJTgLSSXe54j0"
+  [pillow]="16TJvCZyym-xm22DqUtrcvlzrbSueLJKT"
+  [mass_elastic]="1-NGkyylTp7EsPY9wAANzs0UOdzU8o8aL"
 )
 declare -A FILE_NAME=(
   [checkpoints]="odeform_checkpoints.zip"

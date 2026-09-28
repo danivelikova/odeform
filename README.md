@@ -42,7 +42,7 @@ The download script fetches and unpacks them into `checkpoints/` and `data/`:
 ```bash
 bash scripts/download_assets.sh                     # pretrained models only (39 MB)
 bash scripts/download_assets.sh checkpoints donut   # models + one Contact-Force object
-bash scripts/download_assets.sh all                 # models + all datasets (~3.5 GB)
+bash scripts/download_assets.sh all                 # models + all datasets (~3.4 GB)
 ```
 
 | Asset | File | Content |
