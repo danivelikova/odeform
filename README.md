@@ -172,7 +172,13 @@ Numbers obtained with this code and the released checkpoints (CPU, test split):
 | Pillow | 4.705 | 3.560 | 25.3 |
 | **Average** | **6.657** | **5.140** | **58.3** |
 
-<!-- TODO: Mass-Elastic (Table I), Table V -->
+| Mass-Elastic (Table I) | RMSE (mm) | MAE (mm) | MSE (mm²) |
+|---|---:|---:|---:|
+| ODeform | 1.301 | 0.930 | 2.67 |
+
+| Parameter optimization (Table V) | Mass | Bending |
+|---|---:|---:|
+| MAE (normalized parameter space) | 0.113 | 0.083 |
 
 ## Implementation notes
 
