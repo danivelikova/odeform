@@ -1,8 +1,5 @@
 # ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs
 
-[Yordanka Velikova](https://github.com/danivelikova), Mahdi Saleh, Liming Kuang, Benjamin Busam
-Technical University of Munich · Munich Center for Machine Learning
-
 [[Paper (arXiv:2607.20670)]](https://arxiv.org/abs/2607.20670)
 
 ODeform encodes an initial point cloud and its physical parameters (e.g. contact force,
@@ -165,29 +162,6 @@ Any config value can be overridden on the command line (e.g. `--batch_size 32
 `<output_dir>/best.pth`. `--frame_interval k` trains with only every k-th frame of the
 window (sparse supervision) while evaluation still uses all frames.
 
-## Reproduced results
-
-Numbers obtained with this code and the released checkpoints (CPU, test split):
-
-| Contact-Force (Table II) | RMSE (mm) | MAE (mm) | MSE (mm²) |
-|---|---:|---:|---:|
-| Bottle | 7.322 | 5.733 | 64.7 |
-| Cat | 9.298 | 7.203 | 107.5 |
-| Dog | 10.617 | 8.380 | 127.9 |
-| Donut | 4.058 | 3.000 | 18.1 |
-| Doritos | 4.842 | 3.676 | 26.3 |
-| Flipflop | 5.760 | 4.428 | 38.5 |
-| Pillow | 4.705 | 3.560 | 25.3 |
-| **Average** | **6.657** | **5.140** | **58.3** |
-
-| Mass-Elastic | RMSE (mm) | MAE (mm) | MSE (mm²) |
-|---|---:|---:|---:|
-| Frames 40–59 (Table I) | 1.301 | 0.930 | 2.67 |
-| Frames 40–69, extrapolation (Table III) | 3.687 | 2.434 | 41.9 |
-
-| Parameter optimization (Table V) | Mass | Bending |
-|---|---:|---:|
-| MAE (normalized parameter space) | 0.113 | 0.083 |
 
 ## Implementation notes
 
@@ -205,10 +179,10 @@ Numbers obtained with this code and the released checkpoints (CPU, test split):
 ## Citation
 
 ```bibtex
-@article{velikova2026odeform,
+@inproceedings{velikova2026odeform,
   title   = {ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs},
   author  = {Velikova, Yordanka and Saleh, Mahdi and Kuang, Liming and Busam, Benjamin},
-  journal = {arXiv preprint arXiv:2607.20670},
+  booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   year    = {2026}
 }
 ```
